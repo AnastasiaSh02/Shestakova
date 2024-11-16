@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/java.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="Logo" >
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer_title">С помощью нас<br>вы сможете создать то, о чем</h1>
+                    <span class="offer_span">желаете!</span>
+                    <p class="offer_text">Наши возможности + опыт позволят 
+                        Вам достичь огромного успеха.
+                        Мы верим в вас! И знаем это на все 100%. Вас не остановить!</p>
+                    <a href="#" class="btn">Узнать больше...</a>
+                </div>
+                <img class="img1" src="img/header-img.png" alt="picture">
+            </div>
+        </div>
+    </header>
+
+    <section class="header1">
+        <div class="container">
+            <h2 class="offer_title1">Что вам необходимо?</h2>
+            <div class="wrapper-inner">
+                <div class="block">
+                    <img class="img2" src="img/f3.png" alt="First Block">
+                    <h3>Первый блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="block">
+                    <img class="img2" src="img/f4.png" alt="Second Block">
+                    <h3>Второй блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="block">
+                    <img class="img2" src="img/f5.png" alt="Third Block">
+                    <h3>Третий блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header4">
+        <div class="container form-wrapper">
+            <div class="form-image">
+                <img src="img/13032023_telefon-13.png" alt="Image">
+            </div>
+            <div class="form-content">
+                <h2 class="offer_title3">Форма заказа телефона</h2>
+                <form class="forms">
+                    <input type="text" placeholder="Ваше имя" class="text2" name="name">
+                    <input type="tel" placeholder="Номер телефона" class="text2" name="phone">
+                    
+                    <select name="model" class="text2" >
+                        <option value="">Выберите модель телефона</option>
+                        <option value="iphone">iPhone</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="huawei">Huawei</option>
+                        <option value="xiaomi">Xiaomi</option>
+                    </select>
+                    
+                    <div class="form-group">
+                        <label>Выберите цвет:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="color" value="Черный"> Черный</label>
+                            <label><input type="radio" name="color" value="Белый"> Белый</label>
+                            <label><input type="radio" name="color" value="Золотой"> Золотой</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Выберите дату доставки:</p>
+                        <input type="date" class="text2" name="delivery_date">
+                    </div>
+                    
+                    <div>
+                        <p>Количество телефонов:</p>
+                        <input type="number" class="text2" name="quantity" min="1" max="10" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label>Дополнительные аксессуары:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="accessory" value="Чехол"> Чехол</label>
+                            <label><input type="checkbox" name="accessory" value="Зарядное устройство"> Зарядное устройство</label>
+                            <label><input type="checkbox" name="accessory" value="Наушники"> Наушники</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Выберите цену телефона:</p>
+                        <input type="range" class="slider" name="price" min="50" max="250" value="80" oninput="priceOutput.value = this.value">
+                        <output id="priceOutput">80</output> тыс. руб.
+                    </div>
+                    <div>
+                        <input type="checkbox" name="gift_wrap" id="gift_wrap" class="text2"> Упаковать в красивую коробку?
+                        <span id="emoji" style="display:none">🎁</span>
+                    </div>
+                    <textarea placeholder="Ваши пожелания" class="text2" name="comments"></textarea>
+                    <button type="submit" class="btn1">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="header2">
+        <div class="container">
+            <h2 class="offer_title2">Форма заказа обратного звонка</h2>
+            <form action="#" class="forms">
+                <input type="text" 
+                    placeholder="Имя" 
+                    class="text1" 
+                    name="name" 
+                    required 
+                    minlength="2" 
+                    maxlength="50" 
+                    pattern="[A-Za-zА-Яа-яЁё\s]+" 
+                    title="Имя должно содержать только буквы и быть длиной от 2 до 50 символов">
+                <input type="email" 
+                    placeholder="Электронная почта" 
+                    class="text1" 
+                    name="email" 
+                    required 
+                    maxlength="100" 
+                    title="Введите корректный адрес электронной почты">
+                <input type="tel" 
+                    placeholder="Телефон" 
+                    class="text1" 
+                    name="phone" 
+                    required 
+                    pattern="^\+?[0-9\s\-\(\)]{10,20}$" 
+                    title="Телефон должен содержать от 10 до 20 символов и может включать +, -, пробелы и скобки">
+                <input type="number" 
+                    placeholder="Ваш возраст" 
+                    class="text1" 
+                    name="age" 
+                    required 
+                    min="18" 
+                    max="90" 
+                    title="Возраст должен быть от 18 до 90 лет">
+                <textarea placeholder="Какие у вас есть вопросы?" 
+                    class="text1" 
+                    name="questions" 
+                    maxlength="500" 
+                    title="Максимальная длина — 500 символов"></textarea>
+                
+                <!-- Кнопка отправки -->
+                <button type="submit" class="btn1">Отправить вопрос!</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="header3">
+        <p>© Все на этом сайте защищено</p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+
+.header {
+    padding-top: 60px;
+    padding-bottom: 110px;
+	background: rgb(177,213,227);
+	background: 
+	linear-gradient(90deg, 
+	rgba(177,213,227,1) 0%, 
+	rgba(121,212,244,1) 13%, 
+	rgba(117,195,249,1) 22%, 
+	rgba(59,128,226,1) 60%, 
+	rgba(0,212,255,1) 100%);
+	margin-bottom: 50px;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	color: white;
+}
+
+.offer {
+    width: 700px;
+    color: white;
+}
+
+.offer_title{
+	font-size: 30px;
+	font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.offer_span{
+	
+	font-size: 48px;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.offer_text{
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	width: 380px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	
+}
+
+.btn{
+	width: 220px;
+	height: 50px;
+	background-color: rgb(255,212,41);
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	text-decoration: none;
+}
+
+.img1{
+	height: 380px;
+}
+
+.logo{
+	margin-bottom: 40px;
+}
+
+.header1{
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+
+.offer_title1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 40px;
+}
+
+.block {
+    width: 30%;
+	color: black;
+	text-align: center;
+}
+
+.block h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 14px;
+    color: #7d7d7d;
+}
+
+.img2 {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.header2 {
+    padding: 60px 0;
+    background-color: #e9f4fb;
+}
+
+.offer_title2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 40px;
+}
+
+.forms {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text1, .text2 {
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.btn1 {
+	display: flex;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(255,212,41);
+    border: none;
+    font-weight: bold;
+    color: black;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header3 {
+    text-align: center;
+    padding: 40px;
+    background: rgb(235,235,235);
+	background: linear-gradient(0deg, 
+	rgba(235,235,235,1) 0%, 
+	rgba(67,99,208,1) 51%, 
+	rgb(30, 65, 180) 100%);
+    color: white;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1199px) 
+{
+    .container {
+        width: 90%; 
+    }
+    .wrapper-inner {
+		flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .offer_text {
+        font-size: 16px;
+    }
+
+    .block {
+        width: 30%; 
+        margin: 0 10px; 
+    }
+
+	.block h3 {
+        margin-bottom: 10px; 
+    }
+
+	.block p {
+        margin-bottom: 15px; 
+    }
+
+    .btn {
+        width: 200px;
+        height: 45px;
+    }
+
+    .img1 {
+        height: 370px;
+    }
+
+	.btn {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 991px) 
+{
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+	.header{
+		padding-bottom: 60px;
+	}
+
+    .wrapper-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+		margin-top: 20px;
+    }
+	
+    .offer {
+        width: 100%;
+    }
+
+	.offer_title1, .offer_title2 {
+		font-size: 35px;
+	}
+
+    .offer_text {
+        font-size: 19px;
+        width: 100%;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+	.block h3{
+		font-size: 24px;
+	}
+
+	.block p {
+        font-size: 18px;
+    }
+
+    .btn {
+		font-size: 20px;
+		height: 65px;
+        width: 100%;
+    }
+
+    .img1 {
+        height: 320px; 
+		margin-top: 30px;
+    }
+
+    .text1, .btn1 {
+        font-size: 20px;
+    }
+
+	.header3 {
+		font-size: 16px;
+	}
+}
+
+/* Лр 8 - Лр 8 - Лр 8 - Лр 8 - Лр 8 - Лр 8 - Лр 8 - Лр 8 -Лр 8 - Лр 8 -*/
+
+.text1 {
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.text1:valid:not(:placeholder-shown) {
+    border-color: green;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.text1:invalid:not(:placeholder-shown) {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.text1:focus:invalid {
+    border-color: red;
+    box-shadow: none;
+}
+
+.text1:focus {
+    border-color: #4CAF50;
+}
+
+.header4 {
+    padding: 60px 0;
+    background: rgb(255,16,206);
+    background: linear-gradient(0deg, rgba(255,16,206,0.5781162806919643) 0%, rgba(191,5,160,0.2391807064622724) 69%, rgba(255,16,206,0.6397409305519083) 100%);
+}
+.offer_title3 {
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 40px;
+}
+.form-wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 8px rgba(255, 0, 191, 0.541);
+    margin-bottom: 60px;
+}
+
+.form-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-image img {
+    width: 350px;
+}
+.form-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.btn1:hover {
+    background-color: #f0c420;
+    color: white;
+}
+
+.radio-group label, .checkbox-group label {
+    display: block;  
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+
+
+
+.error-messages {
+    font-size: 16px;
+    color: #b20000;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #f17575;
+    background-color: #ffe5e5;
+}
+#emoji {
+    font-size: 20px;
+    margin-left: 10px;
+}
