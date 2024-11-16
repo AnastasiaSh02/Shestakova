@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () =>
     const orderButton = document.querySelector('.btn1');
     orderButton.addEventListener('mouseover', () => 
     {
-        orderButton.style.backgroundColor = '#ff5733';
-        orderButton.style.boxShadow = '0 0 20px #ff5733';
+        orderButton.style.backgroundColor = 'rgb(231, 95, 118)';
+        orderButton.style.boxShadow = '0 0 20px rgb(231, 95, 118)';
         orderButton.style.transform = 'scale(1.1)';
     });
 
